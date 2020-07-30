@@ -1,120 +1,79 @@
-GrupoA Educação - Full Stack Web Developer PHP
-===================
+<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
-[![N|Solid](https://www.grupoa.com.br/hs-fs/hubfs/logo-grupoa.png?width=300&name=logo-grupoa.png)](https://www.grupoa.com.br) 
+<p align="center">
+<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
+</p>
 
-O objetivo deste desafio é avaliar as competências técnicas dos candidatos a desenvolvedor Full Stack PHP na Maior Plataforma de Educação do Brasil, **Grupo A Educação**. 
+## About Laravel
 
-Será solicitado o desenvolvimento de uma Aplicação que realize a Matrícula do Aluno na Turma de Programação Web da instituição EdTech. Regras e requisitos técnicos estão detalhadas neste documento.
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-# Especificações Técnicas
-- **Front End:** [Bootstrap](https://getbootstrap.com/) como framework de UI
-- **API:** PHP
-- **Banco de Dados:** Postgress ou MySQL
-- **Idioma de escrita do código:** Inglês
+- [Simple, fast routing engine](https://laravel.com/docs/routing).
+- [Powerful dependency injection container](https://laravel.com/docs/container).
+- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+- [Robust background job processing](https://laravel.com/docs/queues).
+- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
+Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-# Requisitos
-## Contextualização
-Considere que uma Instituição de Ensino Superior precisa de uma solução para cadastrar e gerenciar matrículas de usuários em turmas online. Para realizar a matrícula, é necessário que o cadastro de aluno tenha sido realizado.
+## Learning Laravel
 
-O desafio consiste em criar uma aplicação para o cadastro de usuários conforme os critérios de aceitação.
+Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-## Mockups de interface
-Abaixo alguns mockoups de interface como um guia para a criação do front-end. Fique à vontade para usar sua criatividade e melhorias na criação do front-end.
+If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-* Listagem de Alunos
-![Listagem de Alunos](/mockups/studants_list.png)
+## Laravel Sponsors
 
-* Criar/Editar Aluno
-![Listagem de Alunos](/mockups/studants_save.png)
+We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
 
-## Histórias do Usuário
-- **Sendo** um usuário administrativo da Instituição
-- **Quero** gerenciar cadastros de alunos
-- **Para** que eu possa realizar a matrícula do aluno
+- **[Vehikl](https://vehikl.com/)**
+- **[Tighten Co.](https://tighten.co)**
+- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+- **[64 Robots](https://64robots.com)**
+- **[Cubet Techno Labs](https://cubettech.com)**
+- **[Cyber-Duck](https://cyber-duck.co.uk)**
+- **[Many](https://www.many.co.uk)**
+- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
+- **[DevSquad](https://devsquad.com)**
+- [UserInsights](https://userinsights.com)
+- [Fragrantica](https://www.fragrantica.com)
+- [SOFTonSOFA](https://softonsofa.com/)
+- [User10](https://user10.com)
+- [Soumettre.fr](https://soumettre.fr/)
+- [CodeBrisk](https://codebrisk.com)
+- [1Forge](https://1forge.com)
+- [TECPRESSO](https://tecpresso.co.jp/)
+- [Runtime Converter](http://runtimeconverter.com/)
+- [WebL'Agence](https://weblagence.com/)
+- [Invoice Ninja](https://www.invoiceninja.com)
+- [iMi digital](https://www.imi-digital.de/)
+- [Earthlink](https://www.earthlink.ro/)
+- [Steadfast Collective](https://steadfastcollective.com/)
+- [We Are The Robots Inc.](https://watr.mx/)
+- [Understand.io](https://www.understand.io/)
+- [Abdel Elrafa](https://abdelelrafa.com)
+- [Hyper Host](https://hyper.host)
+- [Appoly](https://www.appoly.co.uk)
+- [OP.GG](https://op.gg)
+- [云软科技](http://www.yunruan.ltd/)
 
-### Critérios de aceite: 
+## Contributing
 
-#### Cenário: cadastrar novo aluno
-- **Dado** que estou na tela de Consulta de Alunos
-- **Quando** clico em Cadastrar Aluno
-- **Então** abre a tela de Cadastro do Aluno
-- **E** exibe os campos obrigatórios vazios
-####
-- **Dado** que inseri dados válidos nos campos
-- **Quando** clico em Salvar
-- **Então** cria o novo aluno na base
-- **E** retorna mensagem de sucesso
-####
-- **Dado** que inseri dados válidos nos campos
-- **Quando** clico em Cancelar
-- **Então** retorna para tela Consulta de Alunos
-- **E** não persiste a gravação dos dados no banco 
+Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-#### Cenário: listar alunos cadastrados 
-- **Dado** que estou no Módulo Acadêmico
-- **Quando** clico no menu Alunos
-- **Então** abre a tela de Consulta de Alunos 
-- **E** exibe opção Cadastrar Aluno ao topo
-- **E** lista dados dos alunos cadastrados
-- **E** exibe opção Editar por aluno
-- **E** exibe opção Excluir por aluno
+## Code of Conduct
 
-#### Cenário editar cadastro de aluno
-- **Dado** que estou na listagem de alunos
-- **Quando** clico em Editar aluno
-- **Então** abre a tela de Cadastro do Aluno 
-- **E** exibe os campos do cadastro preenchidos
-- **E** habilita alteração dos campos editáveis
-####
-- **Dado** que estou na tela de Cadastro do Aluno
-- **Quando** clica em Salvar
-- **Então** grava os dados editáveis na base
-####
-- **Dado** que estou na tela de Cadastro do Aluno
-- **Quando** clica em Cancelar
-- **Então** retorna para a tela de Consulta de Alunos
-- **E** não persiste a gravação dos dados
+In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-#### Cenário: excluir cadastro de aluno
-- **Dado** que estou na listagem de alunos
-- **Quando** clico em Excluir aluno
-- **Então** exibe a modal de confirmação de exclusão
-####
-- **Dado** que estou na modal de confirmação de exclusão 
-- **Quando** clico em Confirmar
-- **Então** então exclui o registro do aluno
-####
-- **Dado** que estou na modal de confirmação de exclusão
-- **Quando** clico em Cancelar
-- **Então** então fecha a modal e não persiste a exclusão
+## Security Vulnerabilities
 
-## Campos obrigatórios:
-- **Nome** (editável)
-- **Email** (editável)
-- **RA** (não editável) (chave única)
-- **CPF** (não editável)
+If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-# Desejável
-- Testes unitários
-- Documentação da arquitetura de solução
+## License
 
-# Critérios de avaliação
-- Qualidade de escrita do código
-- Organização do projeto
-- Qualidade da API
-- Lógica da solução implementada
-- Qualidade da camada de persistência
-- Utilização do Git (quantidade e descrição dos commits, Git Flow, ...)
-
-# Instruções de entrega
-1. Crie um fork do repositório no seu GitHub
-2. Faça o push do código desenvolvido no seu Github
-3. Inclua um arquivo chamado COMMENTS.md explicando
-- Decisão da arquitetura utilizada
-- Lista de bibliotecas de terceiros utilizadas
-- O que você melhoraria se tivesse mais tempo
-- Quais requisitos obrigatórios que não foram entregues
-4. Informe ao recrutador quando concluir o desafio junto com o link do repositório
-5. Após revisão do projeto junto com a equipe de desevolvimento deixe seu repositório privado
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
